@@ -1,7 +1,40 @@
+'use client';
 import { NamePlate } from './components/NamePlate';
 import Pointer from './Pointer';
+import { useState, useEffect, useCallback } from 'react';
 
 export default function Home() {
+    const [focusedIndex, setFocusedIndex] = useState(0);
+    const commands = ['About', 'Experience', 'Contact', 'Projects'];
+
+    const handleKeyDown = useCallback(
+        (event: any) => {
+            event.preventDefault();
+            switch (event.key) {
+                case 'ArrowUp':
+                    setFocusedIndex((prevIndex) =>
+                        prevIndex > 0 ? prevIndex - 1 : commands.length - 1,
+                    );
+                    break;
+                case 'ArrowDown':
+                    setFocusedIndex((prevIndex) =>
+                        prevIndex < commands.length - 1 ? prevIndex + 1 : 0,
+                    );
+                    break;
+                default:
+                    break;
+            }
+        },
+        [commands.length],
+    );
+
+    useEffect(() => {
+        window.addEventListener('keydown', handleKeyDown);
+        return () => {
+            window.removeEventListener('keydown', handleKeyDown);
+        };
+    }, [handleKeyDown]);
+
     return (
         <main className="flex flex-col h-screen items-center justify-between">
             <NamePlate />
@@ -9,30 +42,24 @@ export default function Home() {
             <div className="min-h-0 w-9/12 flex-1 flex flex-row my-2 gap-[1.05rem]">
                 <div className="flex flex-col bg-[#2B417B]  gap-4 content-center items-center outline-[#CFD3DE] justify-center  w-1/3 outline outline-8 rounded-xl h-full ">
                     <div className="w-full  pl-24 pr-24 h-full pt-4 flex justify-start flex-col gap-4">
-                        <div className="absolute flex content-center items-center justify-center">
-                            <h2
-                                className="relative bottom-[2.2rem] leading-6 text-outline text-lg 
-                                font-roboto font-bold"
-                            >
-                                COMMAND
-                            </h2>
-                        </div>
-
-                        <h2 className="text-3xl font-roboto font-semibold text-shadow">
-                            About
-                        </h2>
-
-                        <h2 className="text-3xl font-roboto font-semibold text-shadow">
-                            Experience
-                        </h2>
-
-                        <h2 className="text-3xl font-roboto font-semibold text-shadow">
-                            Contact
-                        </h2>
-
-                        <h2 className="text-3xl font-roboto font-semibold text-shadow">
-                            Projects
-                        </h2>
+                        {commands.map((command, index) => (
+                            <div className="flex flex-row relative">
+                                <div
+                                    className="absolute -left-16"
+                                    style={{
+                                        display:
+                                            index === focusedIndex
+                                                ? ''
+                                                : 'none',
+                                    }}
+                                >
+                                    <Pointer />
+                                </div>
+                                <h2 className="text-3xl h-fit font-roboto font-semibold text-shadow">
+                                    {command}
+                                </h2>
+                            </div>
+                        ))}
                     </div>
                 </div>
 
@@ -74,18 +101,17 @@ export default function Home() {
                             <div className="w-full pl-24 pt-4 flex h-full justify-start flex-col gap-4">
                                 <div className="absolute flex flex-col gap-4 content-center items-center justify-center">
                                     <h2 className="relative bottom-[2.2rem] leading-6 text-outline text-lg font-roboto font-extrabold">
-                                        YRS EXPERIENCE
+                                        SKILLS
                                     </h2>
                                 </div>
                                 <div className="flex h-full justify-center items-center">
                                     <div className="h-4 w-40 outline-8 rounded-sm outline outline-[#CFD3DE] ">
-                                        <div className="h-4 exp-bar-bg w-1/3 text-3xl font-roboto font-semibold text-shadow"></div>
+                                        <div className="h-4 skill-bar-bg text-3xl font-roboto font-semibold text-shadow"></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <Pointer />
                         <div className="flex flex-col  gap-4 content-center items-center justify-center h-full ">
                             <div className="w-full pl-8 pt-4 flex h-full justify-start flex-col gap-4">
                                 <div className="absolute flex flex-col gap-4 content-center items-center justify-center">
@@ -93,12 +119,12 @@ export default function Home() {
                                         className="relative bottom-[2.2rem] leading-6 text-outline text-lg 
                                 font-roboto font-extrabold"
                                     >
-                                        SKILLS
+                                        YRS EXPERIENCE
                                     </h2>
                                 </div>
                                 <div className="flex h-full justify-center items-center">
                                     <div className="h-4 w-40 outline-8 rounded-sm outline outline-[#CFD3DE] ">
-                                        <div className="h-4 skill-bar-bg  text-3xl font-roboto font-semibold text-shadow"></div>
+                                        <div className="h-4 exp-bar-bg  w-1/3 text-3xl font-roboto font-semibold text-shadow"></div>
                                     </div>
                                 </div>
                             </div>

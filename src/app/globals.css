@@ -68,3 +68,28 @@ body {
 .text-shadow {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+@keyframes lb {
+    0% {
+        background: linear-gradient(
+            90deg,
+            rgba(226, 225, 185, 1) 0%,
+            rgba(205, 201, 34, 1) 100%
+        );
+    }
+    33% {
+        background: linear-gradient(
+            90deg,
+            rgba(225, 185, 226, 1) 0%,
+            rgba(205, 34, 157, 1) 100%
+        );
+    }
+
+    66% {
+        background: #c2f8fe;
+    }
+
+    100% {
+        background: #e9f5d4;
+    }
+}
