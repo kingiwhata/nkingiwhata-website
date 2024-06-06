@@ -1,12 +1,12 @@
 import type { Metadata } from 'next';
-import { Roboto } from 'next/font/google';
+import { Inter, Roboto } from 'next/font/google';
 import Nav from './components/Nav';
 import './globals.css';
 import { NamePlate } from './components/NamePlate';
 
 const roboto = Roboto({
     subsets: ['latin'],
-    weight: ['100', '400', '900'],
+    weight: ['100', '300', '400', '500', '700', '900'],
     variable: '--font-roboto',
 });
 
