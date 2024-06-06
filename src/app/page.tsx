@@ -11,11 +11,15 @@ export default function Home() {
         (event: any) => {
             event.preventDefault();
             switch (event.key) {
+                case 'k':
+                case 'w':
                 case 'ArrowUp':
                     setFocusedIndex((prevIndex) =>
                         prevIndex > 0 ? prevIndex - 1 : commands.length - 1,
                     );
                     break;
+                case 'j':
+                case 's':
                 case 'ArrowDown':
                     setFocusedIndex((prevIndex) =>
                         prevIndex < commands.length - 1 ? prevIndex + 1 : 0,
