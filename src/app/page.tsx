@@ -1,4 +1,5 @@
 import { NamePlate } from './components/NamePlate';
+import Pointer from './Pointer';
 
 export default function Home() {
     return (
@@ -84,6 +85,7 @@ export default function Home() {
                             </div>
                         </div>
 
+                        <Pointer />
                         <div className="flex flex-col  gap-4 content-center items-center justify-center h-full ">
                             <div className="w-full pl-8 pt-4 flex h-full justify-start flex-col gap-4">
                                 <div className="absolute flex flex-col gap-4 content-center items-center justify-center">
