@@ -1,4 +1,5 @@
 'use client';
+import Experience from './components/Experience';
 import { NamePlate } from './components/NamePlate';
 import Pointer from './Pointer';
 import { useState, useEffect, useCallback } from 'react';
@@ -6,6 +7,11 @@ import { useState, useEffect, useCallback } from 'react';
 export default function Home() {
     const [focusedIndex, setFocusedIndex] = useState(0);
     const commands = ['About', 'Experience', 'Contact', 'Projects'];
+
+    const handleMouseEnter = (index: any) => {
+        console.log('SSSSSSSSSSSSSSSSSSSSs');
+        setFocusedIndex(index);
+    };
 
     const handleKeyDown = useCallback(
         (event: any) => {
@@ -44,7 +50,7 @@ export default function Home() {
             <NamePlate />
             <div className="h-[500px] w-[500px] "></div>
             <div className="min-h-0 w-9/12 flex-1 flex flex-row my-2 gap-[1.05rem]">
-                <div className="flex flex-col bg-[#2B417B]  gap-4 content-center items-center outline-[#CFD3DE] justify-center  w-1/3 outline outline-8 rounded-xl h-full ">
+                <div className="flex flex-col bg-[#2B417B]  gap-4 content-center items-center outline-[#CFD3DE] justify-center  w-1/3 outline outline-8 rounded-xl h-full cursor-none">
                     <div className="w-full  pl-24 pr-24 h-full pt-4 flex justify-start flex-col gap-4">
                         <div className="absolute flex flex-col content-center items-center justify-center">
                             <h2
@@ -67,7 +73,10 @@ export default function Home() {
                                 >
                                     <Pointer key={index} />
                                 </div>
-                                <h2 className="text-3xl h-fit font-roboto font-semibold text-shadow">
+                                <h2
+                                    className="text-3xl h-fit font-roboto font-semibold text-shadow"
+                                    onMouseEnter={() => handleMouseEnter(index)}
+                                >
                                     {command}
                                 </h2>
                             </div>
@@ -76,7 +85,14 @@ export default function Home() {
                 </div>
 
                 <div className="flex rounded-xl flex-col gap-4 h-full bg-[#2B417B] outline outline-8 outline-[#CFD3DE]">
-                    <div className="flex flex-row ">
+                    <Experience show={commands[focusedIndex] == 'Experience'} />
+                    <div
+                        className="flex flex-row "
+                        style={{
+                            display:
+                                commands[focusedIndex] == 'About' ? '' : 'none',
+                        }}
+                    >
                         <div className="w-fit pl-20 pr-20 pt-4 flex h-full justify-start flex-col gap-4">
                             <div className="absolute flex flex-col content-center items-center justify-center">
                                 <h2
