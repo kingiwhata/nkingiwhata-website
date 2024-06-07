@@ -82,13 +82,13 @@ body {
     50% {
         transform: scale(1.5);
         rotate: 160deg;
-        filter: blur(10px);
+        filter: blur(20px);
     }
 
     100% {
         transform: scale(0);
         rotate: 360deg;
-        filter: blur(20px);
+        filter: blur(30px);
     }
 }
 

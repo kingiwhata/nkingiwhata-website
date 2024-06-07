@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import { Inter, Roboto } from 'next/font/google';
 import Nav from './components/Nav';
 import './globals.css';
-import { NamePlate } from './components/NamePlate';
 
 const roboto = Roboto({
     subsets: ['latin'],
@@ -22,7 +21,9 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${roboto.variable} flex flex-col h-screen`}>
+            <body
+                className={`${roboto.variable} flex flex-col h-screen overflow-hidden`}
+            >
                 <Nav />
                 {children}
             </body>

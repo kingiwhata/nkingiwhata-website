@@ -7,15 +7,16 @@ import { useState, useEffect, useCallback } from 'react';
 
 export default function Home() {
     const [focusedIndex, setFocusedIndex] = useState(0);
+    const [enterPress, setIsEnter] = useState(false);
     const commands = ['About', 'Experience', 'Contact', 'Projects'];
 
     const handleMouseEnter = (index: any) => {
         setFocusedIndex(index);
     };
-
     const handleKeyDown = useCallback(
         (event: any) => {
             event.preventDefault();
+            setIsEnter(false);
             switch (event.key) {
                 case 'k':
                 case 'w':
@@ -30,6 +31,9 @@ export default function Home() {
                     setFocusedIndex((prevIndex) =>
                         prevIndex < commands.length - 1 ? prevIndex + 1 : 0,
                     );
+                    break;
+                case 'Enter':
+                    setIsEnter(true);
                     break;
                 default:
                     break;
@@ -46,7 +50,15 @@ export default function Home() {
     }, [handleKeyDown]);
 
     return (
-        <main className="flex flex-col portal-effect h-screen items-center justify-between">
+        <main
+            className="flex flex-col h-screen items-center justify-between"
+            style={{
+                animation:
+                    commands[focusedIndex] == 'Projects' && enterPress
+                        ? 'warpEffect 3s forwards linear'
+                        : '',
+            }}
+        >
             <NamePlate />
             <div className="h-[500px] w-[500px] "></div>
             <div className="min-h-0 w-9/12 flex-1 flex flex-row my-2 gap-[1.05rem]">
