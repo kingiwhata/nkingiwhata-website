@@ -46,7 +46,7 @@ export default function Home() {
     }, [handleKeyDown]);
 
     return (
-        <main className="flex flex-col h-screen items-center justify-between">
+        <main className="flex flex-col portal-effect h-screen items-center justify-between">
             <NamePlate />
             <div className="h-[500px] w-[500px] "></div>
             <div className="min-h-0 w-9/12 flex-1 flex flex-row my-2 gap-[1.05rem]">

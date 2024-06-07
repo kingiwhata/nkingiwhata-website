@@ -69,6 +69,29 @@ body {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.portal-effect {
+    animation: warpEffect 3s forwards linear;
+}
+
+@keyframes warpEffect {
+    0% {
+        transform: scale(1);
+        rotate: 0deg;
+        filter: blur(0);
+    }
+    50% {
+        transform: scale(1.5);
+        rotate: 160deg;
+        filter: blur(10px);
+    }
+
+    100% {
+        transform: scale(0);
+        rotate: 360deg;
+        filter: blur(20px);
+    }
+}
+
 @keyframes lb {
     0% {
         background: linear-gradient(
