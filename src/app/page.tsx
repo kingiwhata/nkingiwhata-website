@@ -46,18 +46,26 @@ export default function Home() {
             <div className="min-h-0 w-9/12 flex-1 flex flex-row my-2 gap-[1.05rem]">
                 <div className="flex flex-col bg-[#2B417B]  gap-4 content-center items-center outline-[#CFD3DE] justify-center  w-1/3 outline outline-8 rounded-xl h-full ">
                     <div className="w-full  pl-24 pr-24 h-full pt-4 flex justify-start flex-col gap-4">
+                        <div className="absolute flex flex-col content-center items-center justify-center">
+                            <h2
+                                className="relative bottom-[2.2rem] leading-6 text-outline text-lg 
+                                font-roboto font-bold"
+                            >
+                                COMMAND
+                            </h2>
+                        </div>
                         {commands.map((command, index) => (
-                            <div className="flex flex-row relative">
+                            <div className="flex flex-row relative" key={index}>
                                 <div
                                     className="absolute -left-16"
                                     style={{
                                         display:
                                             index === focusedIndex
-                                                ? ''
+                                                ? 'block'
                                                 : 'none',
                                     }}
                                 >
-                                    <Pointer />
+                                    <Pointer key={index} />
                                 </div>
                                 <h2 className="text-3xl h-fit font-roboto font-semibold text-shadow">
                                     {command}
