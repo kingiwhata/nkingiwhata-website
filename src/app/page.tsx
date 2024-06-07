@@ -1,4 +1,5 @@
 'use client';
+import Contact from './components/Contact';
 import Experience from './components/Experience';
 import { NamePlate } from './components/NamePlate';
 import Pointer from './Pointer';
@@ -70,7 +71,7 @@ export default function Home() {
                                                 : 'none',
                                     }}
                                 >
-                                    <Pointer key={index} />
+                                    <Pointer filterID={index} key={index} />
                                 </div>
                                 <h2
                                     className="text-3xl h-fit font-roboto font-semibold text-shadow"
@@ -85,6 +86,7 @@ export default function Home() {
 
                 <div className="flex w-full rounded-xl flex-col gap-4 h-full bg-[#2B417B] outline outline-8 outline-[#CFD3DE]">
                     <Experience show={commands[focusedIndex] == 'Experience'} />
+                    <Contact show={commands[focusedIndex] == 'Contact'} />
                     <div
                         className="flex flex-col gap-4"
                         style={{

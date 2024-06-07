@@ -1,4 +1,4 @@
-export default function Pointer({}) {
+export default function Pointer({ filterID }: { filterID: number }) {
     return (
         <svg
             width="58"
@@ -7,7 +7,7 @@ export default function Pointer({}) {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
         >
-            <g filter="url(#filter0_d_29_210)">
+            <g filter={`url(#filter${filterID}_def)`}>
                 <path
                     fillRule="evenodd"
                     clipRule="evenodd"
@@ -22,7 +22,7 @@ export default function Pointer({}) {
             </g>
             <defs>
                 <filter
-                    id="filter0_d_29_210"
+                    id={`filter${filterID}_def`}
                     x="0"
                     y="0"
                     width="58"
@@ -56,7 +56,7 @@ export default function Pointer({}) {
                     />
                 </filter>
                 <filter
-                    id="filter1_d_29_210"
+                    id={`filter${filterID + 1}_d_29_210`}
                     x="1"
                     y="1.99688"
                     width="56"
@@ -89,7 +89,7 @@ export default function Pointer({}) {
                         result="shape"
                     />
                 </filter>
-                <clipPath id="clip0_29_210">
+                <clipPath id={`clip${filterID}_29_210`}>
                     <rect
                         width="50"
                         height="50"
