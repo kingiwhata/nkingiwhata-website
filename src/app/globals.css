@@ -77,6 +77,69 @@ body {
     animation: scaleIn 0.2s forwards linear;
 }
 
+.pix {
+    background-image: url('/nebipixelyay.png');
+    width: 18rem;
+    height: 26rem;
+}
+
+.idle-nebi {
+    background-position: 150rem 0;
+}
+
+.walk1-nebi {
+    background-position: 132rem 0;
+}
+
+.walk2-nebi {
+    background-position: 114rem 0;
+}
+
+.cheer-nebi {
+    background-position: 98rem 0;
+}
+
+.pix-anim {
+    scale: 0.5;
+    animation:
+        spriteWalk 1s steps(1) 1.5s 10 forwards,
+        spriteIdle 1.8s steps(1) 10s 2 forwards;
+}
+
+@keyframes spriteIdle {
+    0%,
+    100% {
+        background-position: 150rem 0;
+    }
+    50% {
+        background-position: 98rem 0;
+    }
+}
+
+@keyframes spriteWalk {
+    0% {
+        background-position: 114rem 0;
+    }
+    50% {
+        background-position: 132rem 0;
+    }
+}
+
+.move-pix {
+    animation: moveTo 8s 1.5s 1 linear forwards;
+    left: 102.5%;
+    transform: translate(-50%);
+}
+
+@keyframes moveTo {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: 50%;
+    }
+}
+
 @keyframes warpEffect {
     0% {
         transform: scale(1);
