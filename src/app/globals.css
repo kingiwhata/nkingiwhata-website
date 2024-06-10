@@ -32,6 +32,12 @@ body {
     -webkit-text-stroke-width: 1.5px;
 }
 
+.text-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+}
+
 .text-outline {
     text-shadow:
         -2px 2px 0 #000,

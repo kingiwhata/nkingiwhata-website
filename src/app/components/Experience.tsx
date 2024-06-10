@@ -11,7 +11,7 @@ export default function Experience({ show }: { show: boolean }) {
                             className="relative bottom-[2.2rem] leading-6 text-outline text-lg 
                                 font-roboto font-bold"
                         >
-                            COMPANY
+                            EXPERIENCE
                         </h2>
                     </div>
 
@@ -52,9 +52,9 @@ export default function Experience({ show }: { show: boolean }) {
                 </div>
             </div>
 
-            <div className="flex overflow-scroll flex-col gap-4 h-full sm:px-20 px-4 ">
+            <div className="flex overflow-scroll sm:mb-0 mb-8 flex-col gap-4 h-full sm:px-20 px-4 ">
                 <div className="w-fit flex h-full justify-start flex-col gap-4">
-                    <p className="sm:text-left text-center font-roboto text-lg sm:text-xl text-shadow">
+                    <p className="sm:text-left text-clamp text-center font-roboto text-lg sm:text-xl text-shadow">
                         Utilised Typescript, HTML5, CSS, and the
                         Svelte/SvelteKit framework, along with Postman for API
                         testing, to create multiple front-end web applications

@@ -11,7 +11,7 @@ export default function About({ show }: { show: boolean }) {
                             className="relative bottom-[2.2rem] leading-6 text-outline text-lg 
                                 font-roboto font-bold"
                         >
-                            TITLE
+                            ABOUT ME
                         </h2>
                     </div>
 
@@ -71,11 +71,11 @@ export default function About({ show }: { show: boolean }) {
                 </div>
             </div>
 
-            <div className="flex flex-col gap-4 h-full overflow-scroll sm:px-20 px-4">
+            <div className="flex flex-col gap-4 h-full sm:mb-0 mb-8 overflow-scroll sm:px-20 px-4">
                 <div className="w-fit flex h-full justify-start flex-col gap-4">
                     <p
                         className="
-                                font-roboto text-lg sm:text-xl text-shadow sm:text-left text-center"
+                                font-roboto text-clamp text-lg sm:text-xl text-shadow sm:text-left text-center"
                     >
                         Welcome to my portfolio, Software engineer with a
                         passion for developing innovative solutions to complex
