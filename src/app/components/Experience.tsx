@@ -59,7 +59,7 @@ export default function Experience({ show }: { show: boolean }) {
                         Svelte/SvelteKit framework, along with Postman for API
                         testing, to create multiple front-end web applications
                         for exploring and interacting with the 21e8 blockchain.
-                        •Created and maintained RESTful APIs using Go, C++,
+                        Created and maintained RESTful APIs using Go, C++,
                         LevelDB and MongoDB enabling contributions to the 21e8
                         blockchain through proof-of-work cryptographic mining,
                         and facilitating data storing and retrieval from the
