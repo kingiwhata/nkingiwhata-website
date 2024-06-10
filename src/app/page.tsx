@@ -67,9 +67,9 @@ export default function Home() {
                     isWarp={commands[focusedIndex] == 'Projects' && enterPress}
                 />
             </div>
-            <div className="sm:h-32 h-fit w-full sm:w-9/12 px-2 sm:px-0 sm:flex-1 flex-[0] flex flex-row  my-2 gap-[1.05rem]">
-                <div className="flex flex-col bg-[#2B417B]  gap-4 content-center items-center outline-[#CFD3DE] justify-center  w-full sm:w-1/3 outline outline-8 rounded-xl h-full cursor-none">
-                    <div className="w-full sm:px-24 h-full pt-4 sm:pb-0 pb-4 flex justify-center sm:justify-start flex-row sm:flex-col gap-4">
+            <div className="sm:h-32 h-fit w-full sm:w-9/12 px-2 sm:px-0 sm:flex-1 flex-[0] flex flex-col-reverse sm:flex-row  my-2 gap-[1.05rem]">
+                <div className="flex flex-col bg-[#2B417B]  gap-4 content-center items-center outline-[#CFD3DE] justify-center  w-full sm:w-1/3 outline outline-8 rounded-xl h-full cursor-auto sm:cursor-none">
+                    <div className="w-full sm:px-24 h-full pt-4 sm:pb-0 pb-4 flex justify-center sm:justify-start flex-row sm:flex-col gap-4 z-10">
                         <div className="absolute flex flex-col content-center items-center justify-center">
                             <h2
                                 className="relative bottom-[2.2rem] leading-6 text-outline text-lg 
@@ -103,11 +103,9 @@ export default function Home() {
                         ))}
                     </div>
                 </div>
-                <div className="w-full hidden sm:flex">
-                    <About show={commands[focusedIndex] == 'About'} />
-                    <Experience show={commands[focusedIndex] == 'Experience'} />
-                    <Contact show={commands[focusedIndex] == 'Contact'} />
-                </div>
+                <About show={commands[focusedIndex] == 'About'} />
+                <Experience show={commands[focusedIndex] == 'Experience'} />
+                <Contact show={commands[focusedIndex] == 'Contact'} />
             </div>
         </main>
     );
