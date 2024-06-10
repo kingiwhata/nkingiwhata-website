@@ -40,7 +40,9 @@ export default function Contact({ show }: { show: boolean }) {
                 <div className="flex flex-col  gap-4 content-center items-center justify-center h-full ">
                     <div className="w-full pt-0 sm:pt-4 flex h-full justify-start flex-col gap-4">
                         <div className="sm:h-14  h-fit w-fit sm:w-14">
-                            <LinkedInIcon />
+                            <a href="https://www.linkedin.com/in/nevada-kingi-whata-065572216">
+                                <LinkedInIcon />
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -48,7 +50,9 @@ export default function Contact({ show }: { show: boolean }) {
                 <div className="flex flex-col  gap-4 content-center items-center justify-center h-full ">
                     <div className="w-full pt-0 sm:pt-4 flex h-full justify-start flex-col gap-4">
                         <div className="sm:h-14  h-fit w-fit sm:w-14">
-                            <GithubIcon />
+                            <a href="https://github.com/Vadaku">
+                                <GithubIcon />
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -56,7 +60,9 @@ export default function Contact({ show }: { show: boolean }) {
                 <div className="flex flex-col  gap-4 content-center items-center justify-center h-full ">
                     <div className="w-full pt-0 sm:pt-4 flex h-full justify-start flex-col gap-4">
                         <div className="sm:h-14  h-fit w-fit sm:w-14">
-                            <PSIcon />
+                            <a href="https://psnprofiles.com/VADAKU1">
+                                <PSIcon />
+                            </a>
                         </div>
                     </div>
                 </div>
