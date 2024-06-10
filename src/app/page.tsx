@@ -67,9 +67,9 @@ export default function Home() {
                     isWarp={commands[focusedIndex] == 'Projects' && enterPress}
                 />
             </div>
-            <div className="h-32 w-9/12 flex-1 flex flex-row my-2 gap-[1.05rem]">
-                <div className="flex flex-col bg-[#2B417B]  gap-4 content-center items-center outline-[#CFD3DE] justify-center  w-1/3 outline outline-8 rounded-xl h-full cursor-none">
-                    <div className="w-full  pl-24 pr-24 h-full pt-4 flex justify-start flex-col gap-4">
+            <div className="h-32 w-full sm:w-9/12 flex-1 flex flex-row  my-2 gap-[1.05rem]">
+                <div className="flex flex-col bg-[#2B417B]  gap-4 content-center items-center outline-[#CFD3DE] justify-center  w-full sm:w-1/3 outline outline-8 rounded-xl h-full cursor-none">
+                    <div className="w-full pl-24 pr-24 sm:px-24 h-full pt-4 flex justify-start flex-row sm:flex-col gap-4">
                         <div className="absolute flex flex-col content-center items-center justify-center">
                             <h2
                                 className="relative bottom-[2.2rem] leading-6 text-outline text-lg 
@@ -101,7 +101,7 @@ export default function Home() {
                         ))}
                     </div>
                 </div>
-                <div className="w-full">
+                <div className="w-full hidden sm:flex">
                     <About show={commands[focusedIndex] == 'About'} />
                     <Experience show={commands[focusedIndex] == 'Experience'} />
                     <Contact show={commands[focusedIndex] == 'Contact'} />
