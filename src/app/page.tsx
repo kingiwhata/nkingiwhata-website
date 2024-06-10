@@ -62,10 +62,12 @@ export default function Home() {
             }}
         >
             <NamePlate />
-            <div className="h-[500px] w-full relative  flex items-center justify-center">
-                <Center />
+            <div className="h-[50%] w-full relative  flex items-center justify-center">
+                <Center
+                    isWarp={commands[focusedIndex] == 'Projects' && enterPress}
+                />
             </div>
-            <div className="min-h-0 w-9/12 flex-1 flex flex-row my-2 gap-[1.05rem]">
+            <div className="h-32 w-9/12 flex-1 flex flex-row my-2 gap-[1.05rem]">
                 <div className="flex flex-col bg-[#2B417B]  gap-4 content-center items-center outline-[#CFD3DE] justify-center  w-1/3 outline outline-8 rounded-xl h-full cursor-none">
                     <div className="w-full  pl-24 pr-24 h-full pt-4 flex justify-start flex-col gap-4">
                         <div className="absolute flex flex-col content-center items-center justify-center">

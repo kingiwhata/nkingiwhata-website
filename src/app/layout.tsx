@@ -22,7 +22,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${roboto.variable} flex flex-col h-screen overflow-hidden`}
+                className={`${roboto.variable} flex flex-col min-w-80 h-screen overflow-hidden`}
             >
                 <Nav />
                 {children}

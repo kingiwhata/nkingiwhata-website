@@ -102,7 +102,7 @@ body {
 .pix-anim {
     scale: 0.5;
     animation:
-        spriteWalk 1s steps(1) 1.5s 10 forwards,
+        spriteWalk 1s steps(1) 1.4s 10 forwards,
         spriteIdle 1.8s steps(1) 10s 2 forwards;
 }
 
