@@ -3,9 +3,9 @@ import React from 'react';
 export default function Experience({ show }: { show: boolean }) {
     if (!show) return;
     return (
-        <div className="scale-in flex w-full rounded-xl justify-start items-center flex-col gap-4 sm:h-full h-64 bg-[#2B417B] outline outline-8 outline-[#CFD3DE]">
+        <div className="scale-in flex w-full rounded-xl flex-col gap-4 sm:h-full h-64 bg-[#2B417B] outline outline-8 outline-[#CFD3DE]">
             <div className="flex flex-row ">
-                <div className="w-fit pl-20 pr-20 pt-4 flex h-full justify-center items-center sm:justify-start flex-col gap-4">
+                <div className="sm:w-fit w-full pl-20 pr-20 pt-4 flex h-full items-center sm:items-start flex-col gap-4">
                     <div className="absolute flex flex-col content-center items-center justify-center">
                         <h2
                             className="relative bottom-[2.2rem] leading-6 text-outline text-lg 
@@ -54,7 +54,7 @@ export default function Experience({ show }: { show: boolean }) {
 
             <div className="flex overflow-scroll flex-col gap-4 h-full sm:px-20 px-4 ">
                 <div className="w-fit flex h-full justify-start flex-col gap-4">
-                    <p className="text-center font-roboto text-lg text-shadow">
+                    <p className="sm:text-left text-center font-roboto text-lg sm:text-xl text-shadow">
                         Utilised Typescript, HTML5, CSS, and the
                         Svelte/SvelteKit framework, along with Postman for API
                         testing, to create multiple front-end web applications

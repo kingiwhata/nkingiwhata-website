@@ -5,8 +5,8 @@ export default function About({ show }: { show: boolean }) {
     return (
         <div className="scale-in flex w-full rounded-xl justify-start items-center sm:items-start flex-col gap-4 sm:h-full h-64 bg-[#2B417B] outline outline-8 outline-[#CFD3DE]">
             <div className="flex flex-row ">
-                <div className="w-full pl-20 pr-20 pt-4 flex justify-center sm:items-start h-full flex-col gap-4">
-                    <div className="absolute flex flex-col content-center items-center justify-center">
+                <div className="w-full pl-20 pr-20 pt-4 flex  items-center sm:items-start h-full flex-col gap-4">
+                    <div className="absolute flex flex-col ">
                         <h2
                             className="relative bottom-[2.2rem] leading-6 text-outline text-lg 
                                 font-roboto font-bold"
