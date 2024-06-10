@@ -67,9 +67,9 @@ export default function Home() {
                     isWarp={commands[focusedIndex] == 'Projects' && enterPress}
                 />
             </div>
-            <div className="h-32 w-full sm:w-9/12 flex-1 flex flex-row  my-2 gap-[1.05rem]">
+            <div className="sm:h-32 h-fit w-full sm:w-9/12 px-2 sm:px-0 sm:flex-1 flex-[0] flex flex-row  my-2 gap-[1.05rem]">
                 <div className="flex flex-col bg-[#2B417B]  gap-4 content-center items-center outline-[#CFD3DE] justify-center  w-full sm:w-1/3 outline outline-8 rounded-xl h-full cursor-none">
-                    <div className="w-full pl-24 pr-24 sm:px-24 h-full pt-4 flex justify-start flex-row sm:flex-col gap-4">
+                    <div className="w-full sm:px-24 h-full pt-4 sm:pb-0 pb-4 flex justify-center sm:justify-start flex-row sm:flex-col gap-4">
                         <div className="absolute flex flex-col content-center items-center justify-center">
                             <h2
                                 className="relative bottom-[2.2rem] leading-6 text-outline text-lg 
@@ -80,19 +80,21 @@ export default function Home() {
                         </div>
                         {commands.map((command, index) => (
                             <div className="flex flex-row relative" key={index}>
-                                <div
-                                    className="absolute -left-16"
-                                    style={{
-                                        display:
-                                            index === focusedIndex
-                                                ? 'block'
-                                                : 'none',
-                                    }}
-                                >
-                                    <Pointer filterID={index} key={index} />
+                                <div className="sm:flex hidden">
+                                    <div
+                                        className="absolute -left-16 sm:flex hidden"
+                                        style={{
+                                            display:
+                                                index === focusedIndex
+                                                    ? 'flex'
+                                                    : 'none',
+                                        }}
+                                    >
+                                        <Pointer filterID={index} key={index} />
+                                    </div>
                                 </div>
                                 <h2
-                                    className="text-3xl h-fit font-roboto font-semibold text-shadow"
+                                    className="sm:text-3xl text-lg h-fit font-roboto font-semibold text-shadow"
                                     onMouseEnter={() => handleMouseEnter(index)}
                                 >
                                     {command}
