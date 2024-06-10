@@ -24,7 +24,6 @@ export default function RootLayout({
             <body
                 className={`${roboto.variable} flex flex-col min-w-80 h-screen overflow-hidden`}
             >
-                <Nav />
                 {children}
             </body>
         </html>

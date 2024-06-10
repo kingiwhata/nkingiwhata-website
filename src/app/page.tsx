@@ -62,7 +62,7 @@ export default function Home() {
             }}
         >
             <NamePlate />
-            <div className="h-[50%] w-full relative  flex items-center justify-center">
+            <div className="h-[520px] w-full relative  flex items-center justify-center">
                 <Center
                     isWarp={commands[focusedIndex] == 'Projects' && enterPress}
                 />
