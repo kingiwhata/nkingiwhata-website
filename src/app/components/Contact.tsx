@@ -20,7 +20,7 @@ export default function Contact({ show }: { show: boolean }) {
                         </div>
 
                         <h2 className="text-3xl whitespace-nowrap font-roboto font-semibold text-shadow">
-                            Let's Connect!
+                            Let&apos;s Connect!
                         </h2>
                     </div>
                 </div>
