@@ -13,11 +13,11 @@ export default function Home() {
     const [enterPress, setIsEnter] = useState(false);
     const commands = ['About', 'Experience', 'Contact', 'Projects'];
 
-    const handleMouseEnter = (index: any) => {
+    const handleMouseEnter = (index: number) => {
         setFocusedIndex(index);
     };
     const handleKeyDown = useCallback(
-        (event: any) => {
+        (event: KeyboardEvent) => {
             event.preventDefault();
             setIsEnter(false);
             switch (event.key) {
