@@ -71,7 +71,7 @@ export default function About({ show }: { show: boolean }) {
                 </div>
             </div>
 
-            <div className="flex flex-col gap-4 h-full sm:mb-0 mb-8 overflow-scroll sm:px-20 px-4">
+            <div className="flex flex-col gap-4 h-full sm:mb-0 mb-8 sm:overflow-hidden overflow-scroll sm:px-20 px-4">
                 <div className="w-fit flex h-full justify-start flex-col gap-4">
                     <p
                         className="

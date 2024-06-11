@@ -52,7 +52,7 @@ export default function Experience({ show }: { show: boolean }) {
                 </div>
             </div>
 
-            <div className="flex overflow-scroll sm:mb-0 mb-8 flex-col gap-4 h-full sm:px-20 px-4 ">
+            <div className="flex sm:overflow-hidden overflow-scroll sm:mb-0 mb-8 flex-col gap-4 h-full sm:px-20 px-4 ">
                 <div className="w-fit flex h-full justify-start flex-col gap-4">
                     <p className="sm:text-left text-clamp text-center font-roboto text-lg sm:text-xl text-shadow">
                         Utilised Typescript, HTML5, CSS, and the
