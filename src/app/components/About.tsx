@@ -20,9 +20,9 @@ export default function About({ show }: { show: boolean }) {
                     </h2>
                 </div>
 
-                <div className="flex-col gap-4 content-center items-center sm:flex hidden justify-center h-full ">
+                <div className="flex-col gap-4  items-center sm:flex hidden justify-center h-full ">
                     <div className="w-full pl-24 pt-4 flex h-full justify-start flex-col gap-4">
-                        <div className="absolute flex flex-col gap-4 content-center items-center justify-center">
+                        <div className="absolute flex flex-col gap-4  items-center justify-center">
                             <h2
                                 className="relative bottom-[2.2rem] leading-6 text-outline text-lg 
                                 font-roboto font-extrabold"
@@ -37,9 +37,9 @@ export default function About({ show }: { show: boolean }) {
                     </div>
                 </div>
 
-                <div className="hidden flex-col  gap-4 content-center items-center sm:flex  justify-center  h-full ">
+                <div className="hidden flex-col  gap-4  items-center sm:flex  justify-center  h-full ">
                     <div className="w-full pl-24 pt-4 flex h-full justify-start flex-col gap-4">
-                        <div className="absolute flex flex-col gap-4 content-center items-center justify-center">
+                        <div className="absolute flex flex-col gap-4  items-center justify-center">
                             <h2 className="relative bottom-[2.2rem] leading-6 text-outline text-lg font-roboto font-extrabold">
                                 SKILLS
                             </h2>
@@ -52,9 +52,9 @@ export default function About({ show }: { show: boolean }) {
                     </div>
                 </div>
 
-                <div className="hidden sm:flex flex-col  gap-4 content-center items-center justify-center h-full ">
+                <div className="hidden sm:flex flex-col  gap-4  items-center justify-center h-full ">
                     <div className="w-full pl-8 pt-4 flex h-full justify-start flex-col gap-4">
-                        <div className="absolute flex flex-col gap-4 content-center items-center justify-center">
+                        <div className="absolute flex flex-col gap-4  items-center justify-center">
                             <h2
                                 className="relative bottom-[2.2rem] leading-6 text-outline text-lg 
                                 font-roboto font-extrabold"
