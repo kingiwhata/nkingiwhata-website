@@ -103,8 +103,14 @@ body {
 .pix-anim {
     scale: 0.5;
     animation:
-        spriteWalk 1s steps(1) 1.4s 10 forwards,
-        spriteIdle 1.8s steps(1) 10s 2 forwards;
+        spriteWalk 1s steps(1) 1s 6 forwards,
+        spriteIdle 1.8s steps(1) 7.5s 2 forwards;
+}
+
+.move-pix {
+    animation: moveTo 5s 1.5s 1 linear forwards;
+    left: 110%;
+    transform: translate(-50%);
 }
 
 @keyframes spriteIdle {
@@ -124,12 +130,6 @@ body {
     50% {
         background-position: 132rem 0;
     }
-}
-
-.move-pix {
-    animation: moveTo 8s 1.5s 1 linear forwards;
-    left: 102.5%;
-    transform: translate(-50%);
 }
 
 @keyframes moveTo {
