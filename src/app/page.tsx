@@ -69,7 +69,7 @@ export default function Home() {
                 />
             </div>
             <div className="sm:h-32 h-fit w-full lg:w-9/12 px-2 sm:flex-1 flex-[0] flex flex-col-reverse sm:flex-row  my-2 gap-[1.05rem]">
-                <div className="flex flex-col bg-[#2B417B]  h-auto sm:h-full gap-4  items-center outline-[#CFD3DE] justify-center  w-full sm:w-1/3 outline outline-8 rounded-xl cursor-auto sm:cursor-none">
+                <div className="flex flex-col bg-[#2B417B]  h-auto sm:h-full gap-4  items-center outline-[#CFD3DE] justify-center  w-full sm:w-1/3 outline outline-8 rounded-xl">
                     <div className="w-full sm:px-24 pt-4 sm:pb-0 pb-4 flex justify-center h-full sm:justify-start flex-row sm:flex-col gap-4 z-10">
                         <div className="absolute flex flex-col items-center justify-center">
                             <h2
