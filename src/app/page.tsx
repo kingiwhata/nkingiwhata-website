@@ -68,9 +68,9 @@ export default function Home() {
                     isWarp={commands[focusedIndex] == 'Projects' && enterPress}
                 />
             </div>
-            <div className="sm:h-32 h-fit w-full lg:w-9/12 px-2 sm:flex-1 flex-[0] flex flex-col-reverse sm:flex-row  my-2 gap-[1.05rem]">
-                <div className="flex flex-col bg-[#2B417B]  h-auto sm:h-full gap-4  items-center outline-[#CFD3DE] justify-center  w-full sm:w-1/3 outline outline-8 rounded-xl">
-                    <div className="w-full sm:px-24 pt-4 sm:pb-0 pb-4 flex justify-center h-full sm:justify-start flex-row sm:flex-col gap-4 z-10">
+            <div className="md:h-[17rem] h-fit w-full xl:w-9/12 px-2 flex flex-col-reverse md:flex-row  my-2 gap-[1.05rem]">
+                <div className="flex flex-col bg-[#2B417B]  h-auto md:h-full gap-4  items-center outline-[#CFD3DE] justify-center  w-full md:w-1/3 outline outline-8 rounded-xl">
+                    <div className="w-full md:px-24 pt-4 md:pb-0 pb-4 flex justify-center h-full md:justify-start flex-row md:flex-col gap-4 z-10">
                         <div className="absolute flex flex-col items-center justify-center">
                             <h2
                                 className="relative bottom-[2.2rem] leading-6 text-outline text-lg 
@@ -81,9 +81,9 @@ export default function Home() {
                         </div>
                         {commands.map((command, index) => (
                             <div className="flex flex-row relative" key={index}>
-                                <div className="sm:flex hidden">
+                                <div className="md:flex hidden">
                                     <div
-                                        className="absolute -left-16 sm:flex hidden"
+                                        className="absolute -left-16 md:flex hidden"
                                         style={{
                                             display:
                                                 index === focusedIndex
@@ -95,7 +95,7 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <h2
-                                    className="sm:text-3xl text-lg h-fit font-roboto font-semibold text-shadow"
+                                    className="md:text-3xl text-lg h-fit font-roboto font-semibold text-shadow"
                                     onMouseEnter={() => handleMouseEnter(index)}
                                 >
                                     {command}
