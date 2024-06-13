@@ -68,7 +68,7 @@ export default function Home() {
                     isWarp={commands[focusedIndex] == 'Projects' && enterPress}
                 />
             </div>
-            <div className="md:h-[17rem] h-fit w-full xl:w-9/12 px-2 flex flex-col-reverse md:flex-row  my-2 gap-[1.05rem]">
+            <div className="md:h-[17rem] md:flex-none flex-1 h-fit w-full xl:w-9/12 px-2 flex flex-col-reverse md:flex-row  my-2 gap-[1.05rem]">
                 <div className="flex flex-col bg-[#2B417B]  h-auto md:h-full gap-4  items-center outline-[#CFD3DE] justify-center  w-full md:w-1/3 outline outline-8 rounded-xl">
                     <div className="w-full md:px-24 pt-4 md:pb-0 pb-4 flex justify-center h-full md:justify-start flex-row md:flex-col gap-4 z-10">
                         <div className="absolute flex flex-col items-center justify-center">
