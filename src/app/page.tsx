@@ -54,7 +54,7 @@ export default function Home() {
 
     return (
         <main
-            className="flex flex-col h-screen items-center justify-between"
+            className="flex min-h-screen flex-col h-screen items-center justify-between"
             style={{
                 animation:
                     commands[focusedIndex] == 'Projects' && enterPress
@@ -63,7 +63,7 @@ export default function Home() {
             }}
         >
             <NamePlate />
-            <div className="overflow-hidden h-[520px] w-full relative  flex items-center justify-center">
+            <div className="md:flex-none flex-1 overflow-hidden h-[520px] w-full relative  flex items-center justify-center">
                 <Center
                     isWarp={commands[focusedIndex] == 'Projects' && enterPress}
                 />
