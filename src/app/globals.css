@@ -80,37 +80,18 @@ body {
 
 .pix {
     background-image: url('/nebipixelyay.png');
-    width: 18rem;
+    width: 16rem;
     height: 26rem;
 }
 
-.idle-nebi {
-    background-position: 150rem 0;
-}
-
-.walk1-nebi {
-    background-position: 132rem 0;
-}
-
-.walk2-nebi {
-    background-position: 114rem 0;
-}
-
-.cheer-nebi {
-    background-position: 98rem 0;
-}
-
 .pix-anim {
-    scale: 0.5;
     animation:
         spriteWalk 1s steps(1) 1s 6 forwards,
-        spriteIdle 1.8s steps(1) 7.5s 2 forwards;
-}
-
-.move-pix {
-    animation: moveTo 5s 1.5s 1 linear forwards;
+        spriteIdle 1.8s steps(1) 7.5s 2 forwards,
+        moveTo 5s 1.5s 1 linear forwards;
+    top: 50%;
     left: 110%;
-    transform: translate(-50%);
+    transform: translate(-50%, -50%) scale(0.5);
 }
 
 @keyframes spriteIdle {

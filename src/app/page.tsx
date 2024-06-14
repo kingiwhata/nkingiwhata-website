@@ -54,7 +54,7 @@ export default function Home() {
 
     return (
         <main
-            className="flex min-h-screen flex-col h-svh items-center"
+            className="flex min-h-svh flex-col h-svh items-center"
             style={{
                 animation:
                     commands[focusedIndex] == 'Projects' && enterPress
