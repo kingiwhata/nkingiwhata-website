@@ -54,7 +54,7 @@ export default function Home() {
 
     return (
         <main
-            className="flex min-h-svh flex-col h-svh items-center"
+            className="flex flex-col h-full items-center"
             style={{
                 animation:
                     commands[focusedIndex] == 'Projects' && enterPress
@@ -62,13 +62,15 @@ export default function Home() {
                         : '',
             }}
         >
-            <NamePlate />
-            <div className="flex-1 overflow-hidden w-full relative  flex items-center justify-center">
+            <section className="w-full  h-fit md:h-40 flex items-start md:items-center justify-center">
+                <NamePlate />
+            </section>
+            <section className="flex-1 overflow-hidden w-full relative  flex items-center justify-center">
                 <Center
                     isWarp={commands[focusedIndex] == 'Projects' && enterPress}
                 />
-            </div>
-            <div className="md:h-[17rem] flex-none h-fit w-full 2xl:w-3/4 px-2 flex flex-col-reverse md:flex-row  my-2 gap-[1.05rem]">
+            </section>
+            <section className="md:h-[17rem] flex-none h-fit w-full 2xl:w-3/4 px-2 flex flex-col-reverse md:flex-row  my-2 gap-[1.05rem]">
                 <div className="flex flex-col bg-[#2B417B]  h-auto md:h-full gap-4  items-center outline-[#CFD3DE] justify-center  w-full md:w-1/3 outline outline-8 rounded-xl">
                     <div className="w-full md:px-24 pt-4 md:pb-0 pb-4 flex justify-center h-full md:justify-start flex-row md:flex-col gap-4 z-10">
                         <div className="absolute flex flex-col items-center justify-center">
@@ -108,7 +110,7 @@ export default function Home() {
                 <Experience show={commands[focusedIndex] == 'Experience'} />
                 <Contact show={commands[focusedIndex] == 'Contact'} />
                 <Projects show={commands[focusedIndex] == 'Projects'} />
-            </div>
+            </section>
         </main>
     );
 }

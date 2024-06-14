@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { Inter, Roboto } from 'next/font/google';
-import Nav from './components/Nav';
 import './globals.css';
 
 const roboto = Roboto({
@@ -21,9 +20,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body
-                className={`${roboto.variable} flex flex-col min-w-80 h-screen overflow-hidden`}
-            >
+            <body className={`${roboto.variable} min-w-80 min-h-svh h-svh`}>
                 {children}
             </body>
         </html>
