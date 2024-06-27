@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter, Roboto } from 'next/font/google';
 import './globals.css';
+import { Analytics } from '@vercel/analytics/react';
 
 const roboto = Roboto({
     subsets: ['latin'],
@@ -22,6 +23,7 @@ export default function RootLayout({
         <html lang="en">
             <body className={`${roboto.variable} min-w-80 min-h-svh h-svh`}>
                 {children}
+                <Analytics />
             </body>
         </html>
     );
