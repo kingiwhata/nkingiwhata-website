@@ -1,4 +1,4 @@
-export default function PSIcon() {
+export default function PSIcon({ className }) {
     return (
         <svg
             fill="#FFFFFF"
@@ -13,4 +13,3 @@ export default function PSIcon() {
         </svg>
     );
 }
-

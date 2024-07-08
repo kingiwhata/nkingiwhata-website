@@ -1,6 +1,7 @@
-export default function LinkedInIcon() {
+export default function LinkedInIcon({ className }) {
     return (
         <svg
+            className={className}
             fill="#FFFFFF"
             width="48px"
             height="48px"
@@ -13,4 +14,3 @@ export default function LinkedInIcon() {
         </svg>
     );
 }
-

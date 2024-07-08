@@ -133,7 +133,6 @@ body {
         rotate: 180deg;
         filter: blur(20px);
     }
-
     100% {
         transform: scale(0);
         rotate: 360deg;
@@ -148,33 +147,7 @@ body {
     50% {
         transform: scale(0.5);
     }
-
     100% {
         transform: scale(1);
-    }
-}
-
-@keyframes lb {
-    0% {
-        background: linear-gradient(
-            90deg,
-            rgba(226, 225, 185, 1) 0%,
-            rgba(205, 201, 34, 1) 100%
-        );
-    }
-    33% {
-        background: linear-gradient(
-            90deg,
-            rgba(225, 185, 226, 1) 0%,
-            rgba(205, 34, 157, 1) 100%
-        );
-    }
-
-    66% {
-        background: #c2f8fe;
-    }
-
-    100% {
-        background: #e9f5d4;
     }
 }

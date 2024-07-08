@@ -1,6 +1,7 @@
-export default function GithubIcon() {
+export default function GithubIcon({ className }) {
     return (
         <svg
+            className={className}
             width="48px"
             height="48px"
             viewBox="0 0 20 20"
