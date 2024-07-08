@@ -9,7 +9,7 @@ export default function Contact({ show }: { show: boolean }) {
     if (!show) return;
     return (
         <div className="scale-in flex w-full rounded-xl flex-col gap-4 h-64 sm:h-full bg-[#2B417B] outline outline-8 outline-[#CFD3DE]">
-            <div className="flex flex-row sm:w-fit w-full pl-20 pr-20 pt-4 items-center sm:items-start justify-start gap-4">
+            <div className="flex flex-row sm:w-fit w-full pl-20 pr-20 pt-4 items-center sm:items-start justify-center  sm:justify-start gap-4">
                 <Title title="DETAILS" />
                 <h2 className="text-xl sm:text-3xl whitespace-nowrap font-roboto font-semibold text-shadow">
                     Let's Connect!
