@@ -12,7 +12,7 @@ export default function Contact({ show }: { show: boolean }) {
             <div className="flex flex-row sm:w-fit w-full pl-20 pr-20 pt-4 items-center sm:items-start justify-center  sm:justify-start gap-4">
                 <Title title="DETAILS" />
                 <h2 className="text-xl sm:text-3xl whitespace-nowrap font-roboto font-semibold text-shadow">
-                    Let's Connect!
+                    Let&apos;s Connect!
                 </h2>
             </div>
 
