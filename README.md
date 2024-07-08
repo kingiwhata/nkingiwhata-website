@@ -18,4 +18,4 @@ This repository contains the source code for my personal website. It includes in
 
 - **Frontend:** NextJS, TypeScript, Tailwind CSS
 - **Deployment:** Vercel 
-- **Design:** Figma (View the design mockups and prototypes by clicking [here](https://www.figma.com/your-figma-project-url).
+- **Design:** Figma (View the design mockups and prototypes by clicking [here](https://www.figma.com/design/1poHvmaf19cPjEJNYgFGYq/Nevada-Website?node-id=0-1&t=2rSF0JvQmLQLLWre-0).
