@@ -83,7 +83,7 @@ export default function Home() {
     );
 }
 
-function Content({ focusedCommand }) {
+function Content({ focusedCommand }: { focusedCommand: string }) {
     return (
         <>
             <About show={focusedCommand === 'About'} />
