@@ -1,4 +1,6 @@
-export default function LinkedInIcon({ className }) {
+import React from 'react';
+
+export default function LinkedInIcon({ className }: { className: string }) {
     return (
         <svg
             className={className}

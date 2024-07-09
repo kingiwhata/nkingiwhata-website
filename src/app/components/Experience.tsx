@@ -34,7 +34,7 @@ export default function Experience({ show }: { show: boolean }) {
                 </div>
             </div>
 
-            <ContentSection title="21e8">
+            <ContentSection>
                 <p>
                     Utilised Typescript, HTML5, CSS, and the Svelte/SvelteKit
                     framework, along with Postman for API testing, to create

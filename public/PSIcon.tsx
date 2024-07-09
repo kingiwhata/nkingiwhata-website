@@ -1,6 +1,9 @@
-export default function PSIcon({ className }) {
+import React from 'react';
+
+export default function PSIcon({ className }: { className: string }) {
     return (
         <svg
+            className={className}
             fill="#FFFFFF"
             width="48px"
             height="48px"

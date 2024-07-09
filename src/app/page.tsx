@@ -1,12 +1,12 @@
 'use client';
 import React from 'react';
+import NamePlate from './components/NamePlate';
 import About from './components/About';
 import Center from './components/Center';
-import { CommandPanel } from './components/Command';
+import CommandPanel from './components/Command';
 import Contact from './components/Contact';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
-import { NamePlate } from './components/NamePlate';
 import { useState, useEffect, useCallback } from 'react';
 
 export default function Home() {

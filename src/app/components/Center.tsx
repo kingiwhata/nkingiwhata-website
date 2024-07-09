@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function Center({ isWarp }: { isWarp: boolean }) {
     return (
         <div

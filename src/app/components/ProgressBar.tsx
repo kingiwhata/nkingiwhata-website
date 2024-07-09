@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function ProgressBar({ style }) {
+export default function ProgressBar({ style }: { style: string }) {
     const progStyle = style == 'exp-bar-bg' ? 'w-1/3' : 'w-full';
     return (
         <div className="flex h-full justify-center items-center">

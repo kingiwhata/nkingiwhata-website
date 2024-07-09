@@ -10,7 +10,7 @@ export default function About({ show }: { show: boolean }) {
             <div className="flex flex-row">
                 <div className="w-full md:px-20 px-8 pt-4 flex items-center md:items-start h-full flex-col gap-4">
                     <TitleSection title="TITLE" />
-                    <h2 className="text-3xl font-roboto font-semibold text-shadow">
+                    <h2 className="text-xl sm:text-3xl font-roboto font-semibold text-shadow">
                         Software Engineer
                     </h2>
                 </div>
@@ -27,14 +27,14 @@ export default function About({ show }: { show: boolean }) {
                 <div className="hidden flex-col gap-4 items-center xl:flex justify-center h-full">
                     <div className="w-full pl-24 pt-4 flex h-full justify-start flex-col gap-4">
                         <TitleSection title="SKILLS" />
-                        <ProgressBar style={'skill-bar-bg'} />
+                        <ProgressBar style="skill-bar-bg" />
                     </div>
                 </div>
 
                 <div className="hidden lg:flex flex-col gap-4 items-center justify-center h-full">
                     <div className="w-full xl:pl-8 pl-24 pt-4 flex h-full justify-start flex-col gap-4">
                         <TitleSection title="YRS EXPERIENCE" />
-                        <ProgressBar style={'exp-bar-bg'} />
+                        <ProgressBar style="exp-bar-bg" />
                     </div>
                 </div>
             </div>
