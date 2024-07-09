@@ -1,6 +1,7 @@
 import React from 'react';
 import TitleSection from './Title';
 import ContentSection from './Content';
+import ProgressBar from './ProgressBar';
 
 export default function About({ show }: { show: boolean }) {
     if (!show) return null;
@@ -8,8 +9,8 @@ export default function About({ show }: { show: boolean }) {
         <div className="scale-in flex w-full rounded-xl justify-start items-center md:items-start flex-col gap-4 md:h-full h-64 bg-[#2B417B] outline outline-8 outline-[#CFD3DE]">
             <div className="flex flex-row">
                 <div className="w-full md:px-20 px-8 pt-4 flex items-center md:items-start h-full flex-col gap-4">
-                    <TitleSection title="ABOUT ME" />
-                    <h2 className="text-xl md:text-3xl whitespace-nowrap font-roboto font-semibold text-shadow">
+                    <TitleSection title="TITLE" />
+                    <h2 className="text-3xl font-roboto font-semibold text-shadow">
                         Software Engineer
                     </h2>
                 </div>
@@ -26,22 +27,14 @@ export default function About({ show }: { show: boolean }) {
                 <div className="hidden flex-col gap-4 items-center xl:flex justify-center h-full">
                     <div className="w-full pl-24 pt-4 flex h-full justify-start flex-col gap-4">
                         <TitleSection title="SKILLS" />
-                        <div className="flex h-full justify-center items-center">
-                            <div className="h-4 w-40 outline-8 rounded-sm outline outline-[#CFD3DE] ">
-                                <div className="h-4 skill-bar-bg text-3xl font-roboto font-semibold text-shadow"></div>
-                            </div>
-                        </div>
+                        <ProgressBar style={'skill-bar-bg'} />
                     </div>
                 </div>
 
                 <div className="hidden lg:flex flex-col gap-4 items-center justify-center h-full">
                     <div className="w-full xl:pl-8 pl-24 pt-4 flex h-full justify-start flex-col gap-4">
                         <TitleSection title="YRS EXPERIENCE" />
-                        <div className="flex h-full justify-center items-center">
-                            <div className="h-4 w-40 outline-8 rounded-sm outline outline-[#CFD3DE] ">
-                                <div className="h-4 exp-bar-bg  w-1/3 text-3xl font-roboto font-semibold text-shadow"></div>
-                            </div>
-                        </div>
+                        <ProgressBar style={'exp-bar-bg'} />
                     </div>
                 </div>
             </div>

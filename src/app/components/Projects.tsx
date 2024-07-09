@@ -1,7 +1,4 @@
 import React from 'react';
-import GithubIcon from '../GithubIcon';
-import LinkedInIcon from '../LinkedInIcon';
-import PSIcon from '../PSIcon';
 
 export default function Projects({ show }: { show: boolean }) {
     if (!show) return;
