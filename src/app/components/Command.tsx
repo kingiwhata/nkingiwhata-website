@@ -6,6 +6,10 @@ export default function CommandPanel({
     commands,
     focusedIndex,
     handleMouseEnter,
+}: {
+    commands: string[];
+    focusedIndex: number;
+    handleMouseEnter: (index: number) => void;
 }) {
     return (
         <div className="flex flex-col bg-[#2B417B] h-auto md:h-full gap-4 items-center outline-[#CFD3DE] justify-center w-full md:w-1/3 outline outline-8 rounded-xl">
@@ -25,7 +29,17 @@ export default function CommandPanel({
     );
 }
 
-function CommandItem({ index, command, focusedIndex, handleMouseEnter }) {
+function CommandItem({
+    index,
+    command,
+    focusedIndex,
+    handleMouseEnter,
+}: {
+    index: number;
+    command: string;
+    focusedIndex: number;
+    handleMouseEnter: (index: number) => void;
+}) {
     return (
         <div className="flex flex-row relative">
             <div className="md:flex hidden">
