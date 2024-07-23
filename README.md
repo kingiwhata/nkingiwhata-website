@@ -1,6 +1,6 @@
 # Nevada Kingi-Whata Website
 
-Welcome to Nevada's personal website repository! This project showcases my skills, experience, and interests in software development.
+Welcome to Nevada's Final Fantasy inspired personal website repository! This project showcases my skills, experience, and interests in software development.
 
 ## Overview
 
