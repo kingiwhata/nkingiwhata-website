@@ -44,7 +44,7 @@ export default function About({ show }: { show: boolean }) {
                     Software engineer with two and a half years experience,
                     specializing in blockchain and front-end development, with
                     extensive experience in Typescript, HTML5 and CSS3 as well
-                    as proficiency in frameworks like Svelte, React and NextJS.
+                    as proficiency in the Svelte framework.
                     I am passionate about creating intuitive and responsive web
                     applications that provide seamless user experiences across
                     all devices. I thrive on continuous learning and innovation,
